@@ -1,0 +1,4 @@
+C:\Users\Sudipta\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5284.51\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - NMake Makefiles" D:\Users\Sudipta\CLionProjects\touch
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/Users/Sudipta/CLionProjects/touch/cmake-build-debug

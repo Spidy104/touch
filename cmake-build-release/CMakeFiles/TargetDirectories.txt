@@ -1,0 +1,3 @@
+D:/Users/Sudipta/CLionProjects/touch/cmake-build-release/CMakeFiles/edit_cache.dir
+D:/Users/Sudipta/CLionProjects/touch/cmake-build-release/CMakeFiles/touch.dir
+D:/Users/Sudipta/CLionProjects/touch/cmake-build-release/CMakeFiles/rebuild_cache.dir
