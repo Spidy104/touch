@@ -1,3 +1,0 @@
-D:/Users/Sudipta/CLionProjects/touch/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/Users/Sudipta/CLionProjects/touch/cmake-build-debug/CMakeFiles/touch.dir
-D:/Users/Sudipta/CLionProjects/touch/cmake-build-debug/CMakeFiles/rebuild_cache.dir

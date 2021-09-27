@@ -1,11 +1,14 @@
 #include <iostream>
 #include <fstream>
+#include <cctype>
 
 bool exists(char *filename);
 
-void make_file(char *filename);
+void make_file(char *filename, int exist_state);
 
 void file_creator(int argc, char *const *argv);
+
+constexpr int EXIST_STATE(1);
 
 int main(int argc, char *argv[]) {
     file_creator(argc, argv);
@@ -24,13 +27,7 @@ void file_creator(int argc, char *const *argv) {
             std::cin >> ch;
             top :
             if (toupper(ch) == 'Y') {
-                std::fstream file;
-                try {
-                    file.open(argv[i], std::ios::out);
-                    std::cout << "File was replaced successfully!!!\n";
-                } catch (std::exception &e) {
-                    std::cerr << "Error during file creation!!!\n";
-                }
+                make_file(argv[i], 1);
             } else if (tolower(ch) == 'n') {
                 continue;
             } else {
@@ -40,16 +37,17 @@ void file_creator(int argc, char *const *argv) {
             }
 
         } else {
-            make_file(argv[i]);
+            make_file(argv[i], 0);
         }
     }
 }
 
-void make_file(char *filename) {
+void make_file(char *filename, int exist_state) {
     std::fstream file;
     try {
         file.open(filename, std::ios::out);
-        std::cout << "File was created successfully!!!\n";
+        std::cout << (exist_state == EXIST_STATE ? "File was replaced successfully!!!\n"
+                                                 : "File was created successfully!!!\n");
     } catch (std::exception &e) {
         std::cerr << "Error during file creation!!!\n";
     }
