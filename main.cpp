@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <cctype>
+#include <sys/stat.h>
 
 bool exists(char *filename);
 
