@@ -47,8 +47,7 @@ void make_file(char *filename, int exist_state) {
     const bool existence = exist_state == EXIST_STATE;
     try {
         file.open(filename, std::ios::out);
-        std::cout << (existence ? "File was replaced successfully!!!\n"
-                                : "File was created successfully!!!\n");
+        std::cout << (existence ? "File was replaced successfully!!!\n" : "File was created successfully!!!\n");
     } catch (std::exception &e) {
         std::cerr << (existence ? "Error in file replacement!!!\n"
                                 : "Error in file creation!!!\n");
