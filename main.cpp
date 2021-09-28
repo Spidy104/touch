@@ -55,5 +55,5 @@ void make_file(char *filename, int exist_state) {
 
 bool exists(char *filename) {
     struct stat buffer{};
-    return (stat(filename, &buffer) == 0);
+    return stat(filename, &buffer) == 0;
 }
